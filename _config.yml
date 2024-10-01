@@ -223,3 +223,7 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+jekyll:
+  version: 4.3.3
+
