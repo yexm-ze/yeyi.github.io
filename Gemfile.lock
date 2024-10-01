@@ -141,7 +141,9 @@ DEPENDENCIES
   base64
   csv
   html-proofer (~> 5.0)
-  jekyll-theme-chirpy (~> 7.0, >= 7.0.1)
+  jekyll-paginate
+  jekyll-seo-tag
+  jekyll-theme-chirpy
   tzinfo
   tzinfo-data
 
