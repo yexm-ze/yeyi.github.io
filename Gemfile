@@ -32,3 +32,12 @@ gem 'tzinfo-data'
 gem 'jekyll-paginate'
 gem 'jekyll-seo-tag'
 
+# gem 'github-pages', group: :jekyll_plugins
+# gem 'github-pages', group: :jekyll_plugins, '~> 217'
+# gem 'jekyll', '~> 4.3.3'  # 替换为你需要的版本
+
+# Specify your gem's dependencies in `Gemfile`
+# gem 'github-pages', group: :jekyll_plugins, '~> 217'
+#
+# # 其他 gem 的声明，例如 Jekyll
+# gem 'jekyll', '~> 4.3.3'
