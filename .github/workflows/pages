@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Set up Ruby
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ' 3.3.2' # 根据您本地的 Ruby 版本进行调整
+          bundler-cache: true # 缓存 Bundler 依赖
+
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+
+      # Build the Jekyll site
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      # Optionally, deploy the site (根据您的需求)
+      # - name: Deploy
+      #   run: |
+      #     # 部署命令，例如将生成的文件复制到目标目录或上传到服务器
