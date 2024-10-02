@@ -13,7 +13,7 @@ jobs:
 
     steps:
       # Check out the repository
-      - name: Checkout repository  
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       # Set up Ruby
@@ -22,6 +22,10 @@ jobs:
         with:
           ruby-version: ' 3.3.2' # 根据您本地的 Ruby 版本进行调整
           bundler-cache: true # 缓存 Bundler 依赖
+
+       # Clean up old build files (optional)
+      - name: Clean old build files
+        run: rm -rf ./_site  # 删除旧的 _site 文件夹
 
       # Install dependencies
       - name: Install dependencies
