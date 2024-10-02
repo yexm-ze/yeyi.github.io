@@ -28,7 +28,6 @@ gem 'csv'
 gem 'base64'
 gem 'tzinfo-data'
 
-
 gem 'jekyll-paginate'
 gem 'jekyll-seo-tag'
 
