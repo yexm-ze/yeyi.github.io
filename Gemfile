@@ -44,6 +44,10 @@ gem 'faraday-retry'
 group :jekyll_plugins do
   gem "jekyll-timeago"
 end
+
+gem "sprockets", "~> 3.7"
+
+
 #
 # gem 'faraday-retry'
 #
