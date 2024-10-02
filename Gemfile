@@ -37,9 +37,19 @@ gem 'jekyll-seo-tag'
 gem "jekyll", "~> 4.3.3"
 gem "jekyll-archives", "~> 2.2.1"
 
-group :jekyll_plugins do
-  gem "jekyll-timeago"
-end
+# group :jekyll_plugins do
+#   gem "jekyll-timeago"
+# end
+#
+# gem 'faraday-retry'
+#
+# gem "sprockets", "~> 3.7"
+
+
+
+
+# gem "jekyll-theme-chirpy", "~> 7.0.1"
+
 
 # Add any other gems mentioned in the error
 
