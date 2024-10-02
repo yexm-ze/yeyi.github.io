@@ -41,3 +41,10 @@ jobs:
       # - name: Deploy
       #   run: |
       #     # 部署命令，例如将生成的文件复制到目标目录或上传到服务器
+
+      - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}   # GitHub 自动生成的访问令牌
+        publish_dir: ./_site                        # 构建后的目录，Jekyll 默认输出到 _site
+        publish_branch: master
