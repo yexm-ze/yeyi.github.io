@@ -34,12 +34,16 @@ gem 'jekyll-seo-tag'
 # gem "jekyll-theme-chirpy", "~> 7.1.1"
 # gem "html-proofer", "~> 5.0.9"
 # gem "tzinfo-data", "~> 1.2024.2"
-gem "jekyll", "~> 4.3.3"
+# gem "jekyll", "~> 4.3.3"
 gem "jekyll-archives", "~> 2.2.1"
 
-# group :jekyll_plugins do
-#   gem "jekyll-timeago"
-# end
+# gem "github-pages", "~> 227", group: :jekyll_plugins  # Use the latest compatible version
+gem 'faraday-retry'
+
+
+group :jekyll_plugins do
+  gem "jekyll-timeago"
+end
 #
 # gem 'faraday-retry'
 #
